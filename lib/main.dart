@@ -1,5 +1,5 @@
 import 'package:emart_app/consts/consts.dart';
-import 'package:emart_app/splash_screen/splash_screen.dart';
+import 'package:emart_app/views/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
