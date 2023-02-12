@@ -1,4 +1,5 @@
 import 'package:emart_app/consts/consts.dart';
+import 'package:emart_app/views/auth_screen/signup_screen.dart';
 import 'package:emart_app/widgets_common/applogo_widget.dart';
 import 'package:emart_app/widgets_common/custom_textfield.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +45,11 @@ class LoginScreen extends StatelessWidget {
                       color: fontGrey,
                     ),),
                     5.heightBox,
-                    ourButton(color: lightGolden,textColor: Colors.white,title: signup, onPress: () {}).box.width(context.screenWidth -50).make(),
+                    ourButton(color: lightGolden,textColor: Colors.white,title: signup, onPress: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const SignupScreen()));
+                    }).box.width(context.screenWidth -50).make(),
                     10.heightBox,
                     const Text(loginWith,style: TextStyle(color: fontGrey),),
                     5.heightBox,
