@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   // création d'une méthode pour changer d'écran
   changeScreen(){
-    Future.delayed(Duration(microseconds: 0 ), () {
+    Future.delayed(Duration(seconds: 3 ), () {
       Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => const LoginScreen()));
